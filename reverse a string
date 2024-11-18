@@ -1,0 +1,12 @@
+# reverse a string in python
+
+def strverse(x):
+    if len(x)==0:
+        return 0
+    elif len(x)==1:
+        return x
+    else: 
+        return strverse(x[1:])+x[0]
+    
+x=input("enter kar ")
+print(strverse(x))
