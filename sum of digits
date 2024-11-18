@@ -13,3 +13,10 @@ def sumofdigits(x):
      
 x=int(input("enter the number"))
 print(sumofdigits(x))
+
+
+#another itartable way
+
+def sumofdigits(x):
+    return sum(int(digit) for digit in str(x))
+print(sumofdigits(123))  
