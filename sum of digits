@@ -1,0 +1,15 @@
+#itratable method 
+
+def sumofdigits(x):
+    if x==0:
+        return x
+    else :
+         sum=0 
+         for i in range(x):
+             n=x%10
+             sum=sum+n
+             x=x//10
+         return sum
+     
+x=int(input("enter the number"))
+print(sumofdigits(x))
